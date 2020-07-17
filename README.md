@@ -1,3 +1,3 @@
 # trydjango
-Sample TODO ADD
+Sample TODO APP
 With Bekaar Ui
