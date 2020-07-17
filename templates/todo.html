@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn Django</title>
+    <h1>TODO</h1>
+    <ul>
+        {% for i in  all_todo %}
+        <li>{{ i.content }}
+        <form action="/deletetodo/{{i.id}}/"
+              style="display: inline;"
+              method="post">{% csrf_token %}
+            <input type="submit" value="Delete"/>
+        </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <form action="/addtodo/" method="post">{% csrf_token %}
+        <input type = "text" name="Content"/>
+        <input type = "submit" value="Add"/>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
