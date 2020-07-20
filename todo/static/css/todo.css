@@ -1,0 +1,13 @@
+body{
+    background-color: lightblue;
+}
+
+h1 {
+    color:navy;
+    text-align : center;
+    font-family: 'Raleway';
+}
+
+#list{
+    list-style-type:circle;
+}
